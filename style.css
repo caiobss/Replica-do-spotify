@@ -1,86 +1,88 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: #ddd;
 }
-
-body, html{
+html, body{
+    background-color: #333;
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: #333;
-    color: #ddd;
+    align-items: center;
 }
-
-img{
+.musicas{
+    width: 300px;
+}
+.img-musicas{
+    height: 100%;
+    width: 100%;
+}
+.img-musicas img{
     object-fit: cover;
     height: 300px;
-    width: 300px;
-}
-
-.descricao{
-    margin-top: 15px;
-    width: 300px;
-}
-
-.descricao h2{
-    margin-bottom: 5px;
-}
-
-.duracao{
-    width: 300px;
-    margin-top: 25px;
-}
-
-.duracao .barra{
-    display: flex;
     width: 100%;
-    height: 6px;
-    border: 1px solid #eee;
-    border-radius: 5px;
+}
+.descricoes{
+    margin: .8rem 0;
+}
+.descricoes h2{
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+.barra-progresso{
+    margin-top: 1.5rem;
+    border: 1px solid #ddd;
+    height: 7px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
     align-items: center;
     justify-content: flex-start;
+
 }
-.duracao .barra progress{
-    background-color: #333;
-    height: 4px;
+.barra-progresso progress{
+    background-color: gray;
+    height: 5px;
     width: 0%;
 }
-.duracao .tempo{
-    margin-top: 15px;
+.barra-progresso .ponto{
+    background-color: #ddd;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    margin-left: -10px;
+}
+.timer{
+    margin-top: 1rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.ponto{
-    background-color: #eee;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    margin-left: -10px;
+.timer p{
+    font-size: .91rem;
 }
-.player{
+.buttons{
+    margin-top: 1.2rem;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    width: 300px;
-    margin-top: 15px;
+    align-items: center;
+    width: 100%;
 }
-.player i{
+.buttons i{
     cursor: pointer;
 }
-.player .botao-play{
-    font-size: 50px;
+.buttons .play, .pause{
+    font-size: 3.2rem;
 }
-.player .botao-pause{
-    font-size: 50px;
+.buttons .pause{
     display: none;
 }
-.player .setas{
-    font-size: 40px;
+.buttons .voltar, .proxima{
+    font-size: 2.5rem;
 }

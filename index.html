@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +9,30 @@
     <title>Spotify</title>
 </head>
 <body>
-    <img src="imgs/aditya-chinchure-TE50158gdvs-unsplash.jpg" alt="A imagem não foi carregada" draggable="false">
-    <div class="descricao">
-        <h2>As You Fade Away</h2>
-        <i>NEFFEX</i>
-    </div>
-    <div class="duracao">
-        <div class="barra">
+    <div class="musicas">
+        <div class="img-musicas">
+            <img src="/imgs/aditya-chinchure-TE50158gdvs-unsplash.jpg" alt="">
+        </div>
+        <div class="descricoes">
+            <h2 class="nome-musica">As You Fade Away</h2>
+            <i class="artista">NEFFEX</i>
+        </div>
+        <div class="barra-progresso">
             <progress value="0" max="1"></progress>
             <div class="ponto"></div>
         </div>
-        <div class="tempo">
-             <p class="inicio">0:00</p>
-             <p class="fim">0:00</p>
+        <div class="timer">
+            <p class="tempo-inicio">0:00</p>
+            <p class="tempo-fim">0:00</p>
+        </div>
+        <div class="buttons">
+            <i class="fas fa-step-backward voltar"></i>
+            <i class="fas fa-play-circle play"></i>
+            <i class="fas fa-pause-circle pause"></i>
+            <i class="fas fa-step-forward proxima"></i>
         </div>
     </div>
-    <div class="player">
-        <i class="fas fa-step-backward setas anterior"></i>
-        <i class="fas fa-play-circle botao-play"></i>
-        <i class="fas fa-pause-circle botao-pause"></i>
-        <i class="fas fa-step-forward setas proxima"></i>
-    </div>
-    <audio src="songs/As You Fade Away - NEFFEX.mp3"></audio>
+    <audio src="/songs/As You Fade Away - NEFFEX.mp3"></audio>
     <script src="script.js"></script>
 </body>
 </html>
